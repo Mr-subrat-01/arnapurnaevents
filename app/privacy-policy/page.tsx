@@ -395,21 +395,23 @@ export default function PrivacyPolicyPage() {
                         <div className="space-y-2 text-gray-700">
                           <p className="flex items-center gap-2">
                             <Mail className="w-5 h-5 text-blue-600" />
-                            <strong>Email:</strong> info@annapurnaevents.com
+                            <strong>Email:</strong>{" "}
+                            {process.env.NEXT_PUBLIC_EMAIL_PRIMARY}
                           </p>
                           <p className="flex items-center gap-2">
                             <span className="w-5 h-5 flex items-center justify-center text-blue-600">
                               📞
                             </span>
-                            <strong>Phone:</strong> +91 XXXXX XXXXX
+                            <strong>Phone:</strong>{" "}
+                            {process.env.NEXT_PUBLIC_PHONE_PRIMARY}
                           </p>
                           <p className="flex items-start gap-2">
                             <span className="w-5 h-5 flex items-center justify-center text-blue-600 mt-1">
                               📍
                             </span>
                             <span>
-                              <strong>Address:</strong> Your Address, City,
-                              State, India
+                              <strong>Address:</strong>{" "}
+                              {process.env.NEXT_PUBLIC_ADDRESS_FULL}
                             </span>
                           </p>
                         </div>
