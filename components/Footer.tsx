@@ -11,6 +11,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import Image from "next/image";
+import { config } from "@/lib/config";
 
 export default function Footer() {
   return (
@@ -29,14 +30,14 @@ export default function Footer() {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-500/30 h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.121813214429!2d73.87373287495659!3d18.563892982542426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src={config.maps.embedUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Arnapurna Events Location"
+                title={`${config.company.name} Location`}
               ></iframe>
             </div>
 
@@ -52,11 +53,11 @@ export default function Footer() {
                       Address
                     </h4>
                     <p className="text-gray-300 leading-relaxed">
-                      123, Event Plaza, MG Road
+                      {config.contact.address.line1}
                       <br />
-                      Your City, State - 000000
+                      {config.contact.address.line2}
                       <br />
-                      India
+                      {config.contact.address.country}
                     </p>
                   </div>
                 </div>
@@ -71,8 +72,8 @@ export default function Footer() {
                     <h4 className="font-bold text-lg mb-2 text-amber-400">
                       Phone
                     </h4>
-                    <p className="text-gray-300">+91 XXXXX XXXXX</p>
-                    <p className="text-gray-300">+91 XXXXX XXXXX</p>
+                    <p className="text-gray-300">{config.contact.phone.primary}</p>
+                    <p className="text-gray-300">{config.contact.phone.secondary}</p>
                   </div>
                 </div>
               </div>
@@ -86,9 +87,9 @@ export default function Footer() {
                     <h4 className="font-bold text-lg mb-2 text-amber-400">
                       Email
                     </h4>
-                    <p className="text-gray-300">info@annapurnaevents.com</p>
+                    <p className="text-gray-300">{config.contact.email.primary}</p>
                     <p className="text-gray-300">
-                      bookings@annapurnaevents.com
+                      {config.contact.email.secondary}
                     </p>
                   </div>
                 </div>
@@ -116,32 +117,38 @@ export default function Footer() {
              
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Professional event management services for all occasions. From
-              weddings to corporate events, we bring your vision to life with
-              creativity and excellence.
+              {config.company.description}
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href={config.social.facebook}
                 className="w-10 h-10 bg-white/10 hover:bg-amber-500 rounded-full flex items-center justify-center transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href={config.social.instagram}
                 className="w-10 h-10 bg-white/10 hover:bg-amber-500 rounded-full flex items-center justify-center transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href={config.social.youtube}
                 className="w-10 h-10 bg-white/10 hover:bg-amber-500 rounded-full flex items-center justify-center transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Youtube size={20} />
               </a>
               <a
-                href="#"
+                href={config.social.linkedin}
                 className="w-10 h-10 bg-white/10 hover:bg-amber-500 rounded-full flex items-center justify-center transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={20} />
               </a>
@@ -212,7 +219,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2025 Arnapurna Events. All rights reserved.
+              © {config.copyright.year} {config.copyright.company}. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link

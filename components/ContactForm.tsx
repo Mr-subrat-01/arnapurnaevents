@@ -24,6 +24,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Loader2 } from "lucide-react";
+import { config } from "@/lib/config";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -121,7 +122,7 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <Input placeholder="+91 XXXXX XXXXX" {...field} />
+                  <Input placeholder={config.contact.phone.primary} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

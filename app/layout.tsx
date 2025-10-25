@@ -4,13 +4,13 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import NextTopLoader from "nextjs-toploader";
+import { config } from "@/lib/config";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:"Arnapurna Events & Cater (AEC BBSR) - Premier Event Management Services in Bhubaneswar",
-  description:
-    "Professional event management services for weddings, birthdays, corporate events, DJ nights, and more.",
+  title: `${config.company.title}`,
+  description: config.company.description,
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextTopLoader color="var(--color-amber-400)" />
+        <NextTopLoader color="var(--color-amber-400)" showSpinner={false} />
 
         <Navbar />
         <main className="min-h-screen">{children}</main>

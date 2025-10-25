@@ -1,0 +1,102 @@
+# Complete Environment Variables Template for Annapurna Events
+# Copy this file to .env.local and update the values with your actual information
+# All variables are optional - if not set, default values from config.ts will be used
+
+# =============================================================================
+# COMPANY INFORMATION
+# =============================================================================
+NEXT_PUBLIC_SITE_TITLE="Arnapurna Events & Cater (AEC BBSR) - Premier Event Management Services in Bhubaneswar"
+NEXT_PUBLIC_COMPANY_NAME="Arnapurna Events"
+NEXT_PUBLIC_COMPANY_TAGLINE="Premier Event Management Services in Bhubaneswar"
+NEXT_PUBLIC_COMPANY_DESCRIPTION="Professional event management services for weddings, birthdays, corporate events, DJ nights, and more."
+
+# =============================================================================
+# CONTACT INFORMATION
+# =============================================================================
+# Phone Numbers
+NEXT_PUBLIC_PHONE_PRIMARY="+91 XXXXX XXXXX"
+NEXT_PUBLIC_PHONE_SECONDARY="+91 XXXXX XXXXX"
+
+# Email Addresses
+NEXT_PUBLIC_EMAIL_PRIMARY="info@annapurnaevents.com"
+NEXT_PUBLIC_EMAIL_SECONDARY="bookings@annapurnaevents.com"
+
+# Address Information
+NEXT_PUBLIC_ADDRESS_LINE_1="123, Event Plaza, MG Road"
+NEXT_PUBLIC_ADDRESS_LINE_2="Your City, State - 000000"
+NEXT_PUBLIC_ADDRESS_COUNTRY="India"
+NEXT_PUBLIC_ADDRESS_FULL="123, Event Plaza, MG Road, Your City, State - 000000, India"
+
+# =============================================================================
+# BUSINESS HOURS
+# =============================================================================
+NEXT_PUBLIC_BUSINESS_HOURS_WEEKDAYS="Mon - Fri: 9AM - 8PM"
+NEXT_PUBLIC_BUSINESS_HOURS_SATURDAY="Saturday: 10AM - 6PM"
+NEXT_PUBLIC_BUSINESS_HOURS_SUNDAY="Sunday: By Appointment"
+
+# =============================================================================
+# SOCIAL MEDIA LINKS
+# =============================================================================
+NEXT_PUBLIC_SOCIAL_FACEBOOK="https://facebook.com/annapurnaevents"
+NEXT_PUBLIC_SOCIAL_INSTAGRAM="https://instagram.com/annapurnaevents"
+NEXT_PUBLIC_SOCIAL_YOUTUBE="https://youtube.com/@annapurnaevents"
+NEXT_PUBLIC_SOCIAL_LINKEDIN="https://linkedin.com/company/annapurnaevents"
+
+# =============================================================================
+# GOOGLE MAPS
+# =============================================================================
+NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.121813214429!2d73.87373287495659!3d18.563892982542426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+
+# =============================================================================
+# COMPANY STATISTICS
+# =============================================================================
+NEXT_PUBLIC_STATS_EVENTS_COMPLETED="500+"
+NEXT_PUBLIC_STATS_HAPPY_CLIENTS="450+"
+NEXT_PUBLIC_STATS_YEARS_EXPERIENCE="5+"
+NEXT_PUBLIC_STATS_SUCCESS_RATE="98%"
+
+# =============================================================================
+# TEAM INFORMATION
+# =============================================================================
+# Team Member 1
+NEXT_PUBLIC_TEAM_MEMBER_1_NAME="Priya Sharma"
+NEXT_PUBLIC_TEAM_MEMBER_1_ROLE="Founder & Lead Planner"
+NEXT_PUBLIC_TEAM_MEMBER_1_IMAGE="https://api.dicebear.com/7.x/avataaars/svg?seed=Priya"
+
+# Team Member 2
+NEXT_PUBLIC_TEAM_MEMBER_2_NAME="Rajesh Kumar"
+NEXT_PUBLIC_TEAM_MEMBER_2_ROLE="Operations Manager"
+NEXT_PUBLIC_TEAM_MEMBER_2_IMAGE="https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh"
+
+# Team Member 3
+NEXT_PUBLIC_TEAM_MEMBER_3_NAME="Anjali Patel"
+NEXT_PUBLIC_TEAM_MEMBER_3_ROLE="Creative Director"
+NEXT_PUBLIC_TEAM_MEMBER_3_IMAGE="https://api.dicebear.com/7.x/avataaars/svg?seed=Anjali"
+
+# Team Member 4
+NEXT_PUBLIC_TEAM_MEMBER_4_NAME="Vikram Singh"
+NEXT_PUBLIC_TEAM_MEMBER_4_ROLE="Client Relations"
+NEXT_PUBLIC_TEAM_MEMBER_4_IMAGE="https://api.dicebear.com/7.x/avataaars/svg?seed=Vikram"
+
+# =============================================================================
+# COPYRIGHT INFORMATION
+# =============================================================================
+NEXT_PUBLIC_COPYRIGHT_YEAR="2025"
+
+# =============================================================================
+# EMAILJS CONFIGURATION (REQUIRED FOR CONTACT FORM)
+# =============================================================================
+# Get these values from your EmailJS account
+NEXT_PUBLIC_EMAILJS_SERVICE_ID="your_service_id"
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID="your_template_id"
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY="your_public_key"
+
+# =============================================================================
+# USAGE INSTRUCTIONS
+# =============================================================================
+# 1. Copy this file to .env.local
+# 2. Replace all placeholder values with your actual information
+# 3. Remove any variables you don't want to override (they will use defaults)
+# 4. Restart your development server after making changes
+# 5. All variables starting with NEXT_PUBLIC_ are accessible in the browser
+# 6. Never commit .env.local to version control (it's in .gitignore)

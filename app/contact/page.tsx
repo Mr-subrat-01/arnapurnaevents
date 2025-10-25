@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { config } from "@/lib/config";
 
 export default function ContactPage() {
   const contactMethods = [
@@ -17,28 +18,28 @@ export default function ContactPage() {
       icon: <Phone className="w-8 h-8" />,
       title: "Call Us",
       description: "Speak directly with our event planners",
-      details: ["+91 XXXXX XXXXX", "+91 XXXXX XXXXX"],
+      details: [config.contact.phone.primary, config.contact.phone.secondary],
       color: "from-blue-500 to-blue-600",
     },
     {
       icon: <Mail className="w-8 h-8" />,
       title: "Email Us",
       description: "Get a response within 24 hours",
-      details: ["info@annapurnaevents.com", "bookings@annapurnaevents.com"],
+      details: [config.contact.email.primary, config.contact.email.secondary],
       color: "from-purple-500 to-purple-600",
     },
     {
       icon: <MapPin className="w-8 h-8" />,
       title: "Visit Us",
       description: "Come to our office for consultation",
-      details: ["123, Event Plaza, MG Road", "Your City, State - 000000"],
+      details: [config.contact.address.line1, config.contact.address.line2],
       color: "from-teal-500 to-teal-600",
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Working Hours",
       description: "We're available most of the week",
-      details: ["Mon-Fri: 9AM - 8PM", "Sat: 10AM - 6PM"],
+      details: [config.businessHours.weekdays, config.businessHours.saturday],
       color: "from-amber-500 to-amber-600",
     },
   ];
@@ -224,7 +225,7 @@ export default function ContactPage() {
                   <p className="text-blue-100 mb-6">
                     Schedule a free consultation to discuss your event in detail
                   </p>
-                  <a href="tel:+91XXXXXXXXXX">
+                  <a href={`tel:${config.contact.phone.primary.replace(/\s/g, '')}`}>
                     <button className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-3 px-6 rounded-lg transition">
                       Call to Book Now
                     </button>

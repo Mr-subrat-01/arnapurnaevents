@@ -13,30 +13,31 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
+import { config } from "@/lib/config";
 
 export default function AboutPage() {
   const stats = [
     {
       icon: <Sparkles className="w-8 h-8" />,
-      value: "500+",
+      value: config.stats.eventsCompleted,
       label: "Events Completed",
       color: "from-blue-500 to-blue-600",
     },
     {
       icon: <Users className="w-8 h-8" />,
-      value: "450+",
+      value: config.stats.happyClients,
       label: "Happy Clients",
       color: "from-purple-500 to-purple-600",
     },
     {
       icon: <Award className="w-8 h-8" />,
-      value: "5+",
+      value: config.stats.yearsExperience,
       label: "Years Experience",
       color: "from-amber-500 to-amber-600",
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      value: "98%",
+      value: config.stats.successRate,
       label: "Success Rate",
       color: "from-teal-500 to-teal-600",
     },
@@ -84,28 +85,7 @@ export default function AboutPage() {
     "Quality assurance",
   ];
 
-  const team = [
-    {
-      name: "Priya Sharma",
-      role: "Founder & Lead Planner",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
-    },
-    {
-      name: "Rajesh Kumar",
-      role: "Operations Manager",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh",
-    },
-    {
-      name: "Anjali Patel",
-      role: "Creative Director",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Anjali",
-    },
-    {
-      name: "Vikram Singh",
-      role: "Client Relations",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Vikram",
-    },
-  ];
+  const team = config.team;
 
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 via-white to-sky-50">
@@ -120,12 +100,12 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-amber-500/20 text-amber-300 border-amber-500/50 text-sm">
               <Target className="w-4 h-4 mr-2" />
-              About Arnapurna Events
+              About {config.company.name}
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Crafting Unforgettable
               <span className="block mt-2 bg-linear-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
-                Celebrations Since 2020
+                Celebrations Since {config.company.foundedYear}
               </span>
             </h1>
             <p className="text-xl text-blue-100 leading-relaxed">
@@ -191,12 +171,12 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p className="text-lg">
-                    Arnapurna Events was born from a simple yet powerful vision:
+                    {config.company.name} was born from a simple yet powerful vision:
                     to transform ordinary celebrations into extraordinary
                     experiences that people cherish forever.
                   </p>
                   <p>
-                    What started as a passion project in 2020 has grown into a
+                    What started as a passion project in {config.company.foundedYear} has grown into a
                     full-service event management company trusted by hundreds of
                     clients across the region. Our journey has been marked by
                     countless smiles, joyful tears, and unforgettable moments.
@@ -361,13 +341,13 @@ export default function AboutPage() {
                 key={index}
                 className="group hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-amber-400 overflow-hidden py-0"
               >
-                <div className="relative h-64 bg-linear-to-br from-blue-100 to-purple-100">
+                <div className="relative h-64 bg-linear-to-br from-blue-100 to-purple-100 overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">

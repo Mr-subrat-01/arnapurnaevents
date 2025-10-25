@@ -1,0 +1,18 @@
+# Environment Variables Template for Annapurna Events
+# Copy this file to .env.local and update the values
+
+# EmailJS Configuration
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+
+# Optional: Override config values with environment variables
+# NExt_PUBLIC_SITE_TITLE="Arnapurna Events & Cater (AEC BBSR) - Premier Event Management Services in Bhubaneswar"
+# NEXT_PUBLIC_COMPANY_NAME=Your Company Name
+# NEXT_PUBLIC_PHONE_PRIMARY=+91 12345 67890
+# NEXT_PUBLIC_EMAIL_PRIMARY=info@yourcompany.com
+# NEXT_PUBLIC_ADDRESS_FULL=Your Full Address
+# NEXT_PUBLIC_SOCIAL_FACEBOOK=https://facebook.com/yourcompany
+# NEXT_PUBLIC_SOCIAL_INSTAGRAM=https://instagram.com/yourcompany
+# NEXT_PUBLIC_SOCIAL_YOUTUBE=https://youtube.com/@yourcompany
+# NEXT_PUBLIC_SOCIAL_LINKEDIN=https://linkedin.com/company/yourcompany
