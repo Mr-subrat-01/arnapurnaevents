@@ -320,7 +320,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-purple-100 text-purple-900 hover:bg-purple-100">
@@ -359,7 +359,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       {/* <section className="py-20 bg-linear-to-br from-blue-900 via-blue-800 to-slate-900 text-white relative overflow-hidden">

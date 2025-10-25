@@ -10,7 +10,6 @@ import {
   Youtube,
   Linkedin,
 } from "lucide-react";
-import Image from "next/image";
 import { config } from "@/lib/config";
 
 export default function Footer() {
@@ -72,8 +71,12 @@ export default function Footer() {
                     <h4 className="font-bold text-lg mb-2 text-amber-400">
                       Phone
                     </h4>
-                    <p className="text-gray-300">{config.contact.phone.primary}</p>
-                    <p className="text-gray-300">{config.contact.phone.secondary}</p>
+                    <p className="text-gray-300">
+                      {config.contact.phone.primary}
+                    </p>
+                    <p className="text-gray-300">
+                      {config.contact.phone.secondary}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -87,7 +90,9 @@ export default function Footer() {
                     <h4 className="font-bold text-lg mb-2 text-amber-400">
                       Email
                     </h4>
-                    <p className="text-gray-300">{config.contact.email.primary}</p>
+                    <p className="text-gray-300">
+                      {config.contact.email.primary}
+                    </p>
                     <p className="text-gray-300">
                       {config.contact.email.secondary}
                     </p>
@@ -106,7 +111,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="p-1 rounded-full bg-white/0 backdrop-blur-sm drop-shadow-md">
-                <Image
+                <img
                   src="/logo.png"
                   alt="Logo"
                   width={52}
@@ -114,7 +119,6 @@ export default function Footer() {
                   className="object-contain"
                 />
               </div>
-             
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               {config.company.description}
@@ -219,7 +223,8 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {config.copyright.year} {config.copyright.company}. All rights reserved.
+              © {config.copyright.year} {config.copyright.company}. All rights
+              reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link
