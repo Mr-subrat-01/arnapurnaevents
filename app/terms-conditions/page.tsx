@@ -12,6 +12,7 @@ import {
   Mail,
 } from "lucide-react";
 import Link from "next/link";
+import { config } from "@/lib/config";
 
 export default function TermsConditionsPage() {
   const sections = [
@@ -318,14 +319,14 @@ export default function TermsConditionsPage() {
                           <p className="flex items-center gap-2">
                             <Mail className="w-5 h-5 text-blue-600" />
                             <strong>Email:</strong>{" "}
-                            {process.env.NEXT_PUBLIC_EMAIL_PRIMARY}
+                            {config.contact.email.primary}
                           </p>
                           <p className="flex items-center gap-2">
                             <span className="w-5 h-5 flex items-center justify-center text-blue-600">
                               📞
                             </span>
                             <strong>Phone:</strong>{" "}
-                            {process.env.NEXT_PUBLIC_PHONE_PRIMARY}
+                            {config.contact.phone.primary}
                           </p>
                         </div>
                       </CardContent>
