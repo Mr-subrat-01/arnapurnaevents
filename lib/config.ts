@@ -6,77 +6,60 @@
 export const config = {
   // Company Information
   company: {
-    title: process.env.NEXT_PUBLIC_SITE_TITLE || "Annapurna Events",
-    name: process.env.NEXT_PUBLIC_COMPANY_NAME || "Arnapurna Events",
-    tagline: process.env.NEXT_PUBLIC_COMPANY_TAGLINE || "Premier Event Management Services in Bhubaneswar",
-    description: process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Professional event management services for weddings, birthdays, corporate events, DJ nights, and more.",
-    foundedYear: "2020",
+    title:
+      "Arnapurna Events & Cater (AEC BBSR) - Premier Event Management Services in Bhubaneswar",
+    name: "Arnapurna Events & Cater",
+    tagline: "Premier Event Management Services in Bhubaneswar",
+    description:
+      "Professional event management services for weddings, birthdays, corporate events, DJ nights, and more.",
+    foundedYear: "2018",
   },
 
   // Contact Information
   contact: {
     phone: {
-      primary: process.env.NEXT_PUBLIC_PHONE_PRIMARY || "+91 XXXXX XXXXX",
-      secondary: process.env.NEXT_PUBLIC_PHONE_SECONDARY || "+91 XXXXX XXXXX",
+      primary: "+91 99376 09076",
+      secondary: "+91 93374 19929",
     },
     email: {
-      primary:
-        process.env.NEXT_PUBLIC_EMAIL_PRIMARY || "info@annapurnaevents.com",
-      secondary:
-        process.env.NEXT_PUBLIC_EMAIL_SECONDARY ||
-        "bookings@annapurnaevents.com",
+      primary: "mail@arnapurnaevents.in",
+      secondary: "****************",
     },
     address: {
-      line1:
-        process.env.NEXT_PUBLIC_ADDRESS_LINE_1 || "123, Event Plaza, MG Road",
-      line2:
-        process.env.NEXT_PUBLIC_ADDRESS_LINE_2 || "Your City, State - 000000",
-      country: process.env.NEXT_PUBLIC_ADDRESS_COUNTRY || "India",
-      full:
-        process.env.NEXT_PUBLIC_ADDRESS_FULL ||
-        "123, Event Plaza, MG Road, Your City, State - 000000, India",
+      line1: "Panchasakha Nagar",
+      line2: "Bhubaneswar, Odisha - 751019",
+      country: "India",
+      full: "Panchasakha Nagar, BBSR, Odisha 751019",
     },
   },
 
   // Business Hours
   businessHours: {
-    weekdays:
-      process.env.NEXT_PUBLIC_BUSINESS_HOURS_WEEKDAYS || "Mon - Fri: 9AM - 8PM",
-    saturday:
-      process.env.NEXT_PUBLIC_BUSINESS_HOURS_SATURDAY || "Saturday: 10AM - 6PM",
-    sunday:
-      process.env.NEXT_PUBLIC_BUSINESS_HOURS_SUNDAY || "Sunday: By Appointment",
+    weekdays: "Mon - Fri: 9AM - 8PM",
+    saturday: "Saturday: 10AM - 6PM",
+    sunday: "Sunday: By Appointment",
   },
 
   // Social Media Links
   social: {
-    facebook:
-      process.env.NEXT_PUBLIC_SOCIAL_FACEBOOK ||
-      "https://facebook.com/annapurnaevents",
-    instagram:
-      process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM ||
-      "https://instagram.com/annapurnaevents",
-    youtube:
-      process.env.NEXT_PUBLIC_SOCIAL_YOUTUBE ||
-      "https://youtube.com/@annapurnaevents",
-    linkedin:
-      process.env.NEXT_PUBLIC_SOCIAL_LINKEDIN ||
-      "https://linkedin.com/company/annapurnaevents",
+    facebook: "https://www.facebook.com/profile.php?id=61577375545896",
+    instagram: "https://www.instagram.com/arnapurnaevents.cater/",
+    youtube: "https://www.youtube.com/@ARNAPURNAEVENTSCATER",
+    linkedin: "https://www.linkedin.com/company/arnapurna-events-cater/",
   },
 
   // Google Maps
   maps: {
     embedUrl:
-      process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL ||
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.121813214429!2d73.87373287495659!3d18.563892982542426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12653.04467457189!2d85.798496!3d20.247484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7d510000f25%3A0x258c96d4a3f3a445!2sArnapurna%20Events%20%26%20Cater!5e1!3m2!1sen!2sin!4v1761387872301!5m2!1sen!2sin",
   },
 
   // Company Statistics
   stats: {
-    eventsCompleted: process.env.NEXT_PUBLIC_STATS_EVENTS_COMPLETED || "500+",
-    happyClients: process.env.NEXT_PUBLIC_STATS_HAPPY_CLIENTS || "450+",
-    yearsExperience: process.env.NEXT_PUBLIC_STATS_YEARS_EXPERIENCE || "5+",
-    successRate: process.env.NEXT_PUBLIC_STATS_SUCCESS_RATE || "98%",
+    eventsCompleted: "500+",
+    happyClients: "450+",
+    yearsExperience: "5+",
+    successRate: "98%",
   },
 
   // Team Information
@@ -114,15 +97,15 @@ export const config = {
 
   // Copyright
   copyright: {
-    year: process.env.NEXT_PUBLIC_COPYRIGHT_YEAR || "2025",
-    company: process.env.NEXT_PUBLIC_COMPANY_NAME || "Arnapurna Events",
+    year: "2025",
+    company: "Arnapurna Events & Cater",
   },
 
-  // EmailJS Configuration (use environment variables for these)
+  // EmailJS Configuration
   emailjs: {
-    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
-    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "",
+    serviceId: "service_axnvlhu",
+    templateId: "template_l1yr2fj",
+    publicKey: "0bZiLayophQq4bFTl",
   },
 } as const;
 
