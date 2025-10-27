@@ -12,28 +12,28 @@ import Image from "next/image";
 // Replace these with your actual company logos
 const companyLogos = [
   {
-    name: "Tech Corp",
-    logo: "https://via.placeholder.com/200x100/1e3a8a/ffffff?text=Tech+Corp",
+    name: "Reserve Bank of India",
+    logo: "/images/Clients/Client-1.webp",
   },
   {
-    name: "Global Events",
-    logo: "https://via.placeholder.com/200x100/1e3a8a/ffffff?text=Global+Events",
+    name: "District Court-Bhubaneswar",
+    logo: "/images/Clients/Client-2.webp",
   },
   {
-    name: "Innovation Ltd",
-    logo: "https://via.placeholder.com/200x100/1e3a8a/ffffff?text=Innovation+Ltd",
+    name: "Odisha Human Rights Commission",
+    logo: "/images/Clients/Client-3.webp",
   },
   {
-    name: "Business Hub",
-    logo: "https://via.placeholder.com/200x100/1e3a8a/ffffff?text=Business+Hub",
+    name: "OSPHWC",
+    logo: "/images/Clients/Client-4.webp",
   },
   {
-    name: "Creative Solutions",
-    logo: "https://via.placeholder.com/200x100/1e3a8a/ffffff?text=Creative+Solutions",
+    name: "Mayfair-Bhubaneswar",
+    logo: "/images/Clients/Client-5.webp",
   },
   {
-    name: "Enterprise Co",
-    logo: "https://via.placeholder.com/200x100/1e3a8a/ffffff?text=Enterprise+Co",
+    name: "Lemontree Hotels",
+    logo: "/images/Clients/Client-6.webp",
   },
   {
     name: "Digital World",
@@ -84,7 +84,7 @@ export default function ClientsCarousel() {
                 key={index}
                 className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
               >
-                <div className="flex items-center justify-center h-32 bg-gray-50 rounded-lg border-2 border-gray-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 p-6 grayscale hover:grayscale-0">
+                <div className="flex items-center justify-center h-32 bg-gray-50 rounded-lg border-2 border-gray-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 p-6 ">
                   <img
                     src={company.logo}
                     alt={`${company.name} logo`}

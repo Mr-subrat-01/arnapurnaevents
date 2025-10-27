@@ -23,62 +23,62 @@ export default function GalleryPage() {
   // Replace with your actual images
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1519167758495-8a1e0f743b4e?w=800",
+      src: "/images/image-1.webp",
       category: "Weddings",
-      title: "Elegant Wedding Setup",
+      title: "Elegant Wedding",
     },
     {
-      src: "https://images.unsplash.com/photo-1530023367847-a683933f4172?w=800",
+      src: "/images/image-2.webp",
       category: "Weddings",
       title: "Wedding Decoration",
     },
     {
-      src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800",
+      src: "/images/image-3.webp",
       category: "Birthdays",
       title: "Birthday Celebration",
     },
     {
-      src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800",
+      src: "/images/image-4.webp",
       category: "Birthdays",
       title: "Kids Party",
     },
     {
-      src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800",
+      src: "/images/image-5.webp",
       category: "Corporate",
       title: "Corporate Event",
     },
     {
-      src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800",
+      src: "/images/image-6.webp",
       category: "Corporate",
       title: "Conference Setup",
     },
     {
-      src: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800",
+      src: "/images/image-7.webp",
       category: "DJ Nights",
       title: "DJ Night Party",
     },
     {
-      src: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800",
+      src: "/images/image-8.webp",
       category: "DJ Nights",
       title: "Music Event",
     },
     {
-      src: "https://images.unsplash.com/photo-1519167758481-83f29c1a3842?w=800",
+      src: "/images/image-9.webp",
       category: "House Warming",
       title: "House Warming Ceremony",
     },
     {
-      src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800",
+      src: "/images/image-10.webp",
       category: "Others",
       title: "Anniversary Party",
     },
     {
-      src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800",
+      src: "/images/image-11.webp",
       category: "Weddings",
       title: "Wedding Reception",
     },
     {
-      src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=800",
+      src: "/images/image-12.webp",
       category: "Birthdays",
       title: "Theme Party",
     },
@@ -120,7 +120,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Filter Section */}
-      <section className="py-12 sticky top-20 z-40 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+      <section className="py-3 sticky top-20 z-40 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <Filter className="w-5 h-5 text-gray-600" />
