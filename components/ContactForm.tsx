@@ -60,11 +60,12 @@ export default function ContactForm() {
         config.emailjs.serviceId!,
         config.emailjs.templateId!,
         {
-          from_name: values.name,
-          from_email: values.email,
+          name: values.name,
+          email: values.email,
           phone: values.phone,
           event_type: values.eventType,
           message: values.message,
+          submission_time: new Date().toLocaleString(),
         },
         config.emailjs.publicKey!
       );
